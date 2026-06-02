@@ -1,30 +1,148 @@
-*,html{
-    margin: 0;
-    padding: 0;
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif; 
 }
 
-header{
-    background-color: #ff5353;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+body { 
+  background-color: #121212; 
+  color: #ffffff; 
 }
 
-
-body {
-    background-color: #f6f4f4; 
-    
-    
-    text-align: center;
-    
-    font-family: Arial, sans-serif;
+header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 30px 8%; 
+  background-color: #0b0b0b; 
+  border-bottom: 1px solid #1f1f1f; 
 }
 
-h1 {
-    color: #000000;
+.logo { 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+}
+
+.logo-box { 
+  background-color: #ffffff; 
+  color: #000000; 
+  font-weight: 800; 
+  padding: 5px 12px; 
+  border-radius: 3px; 
+}
+
+.logo-text h2 { 
+  letter-spacing: 2px; 
+}
+
+nav ul { 
+  display: flex; 
+  list-style: none; 
+  gap: 35px; 
+}
+
+nav ul li a { 
+  color: #a0a0a0; 
+  text-decoration: none; 
+  font-weight: 600; 
+  text-transform: uppercase; 
+  transition: color 0.3s ease; 
+}
+
+nav ul li a:hover, 
+nav ul li a.active { 
+  color: #ffffff; 
+}
+
+.container { 
+  padding: 80px 8%; 
+  display: flex; 
+  justify-content: center; 
+}
+
+.profile-wrapper { 
+  background-color: #1c1c1c; 
+  border: 1px solid #262626; 
+  padding: 50px; 
+  border-radius: 6px; 
+  width: 100%; 
+  max-width: 650px; 
+}
+
+.subtitle { 
+  letter-spacing: 4px; 
+  color: #a0a0a0; 
+  margin-bottom: 10px; 
+  text-transform: uppercase; 
+}
+
+.title { 
+  font-weight: 700; 
+  margin-bottom: 35px; 
+}
+
+.profile-table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.profile-table tr { 
+  border-bottom: 1px solid #2d2d2d; 
+}
+
+.profile-table tr:last-child { 
+  border-bottom: none; 
+}
+
+.profile-table td { 
+  padding: 18px ; 
+  vertical-align: top; 
+}
+
+.profile-table td:first-child { 
+  width: 35%; 
+  font-weight: 700; 
+  color: #a0a0a0; 
+  padding-right: 15px; 
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 40px ;
+  }
   
+  .profile-wrapper {
+    padding: 30px 20px;
+  }
+  
+  .profile-table td {
+    display: block; 
+    width: 100% !important;
+    padding: 8px ;
+  }
+  
+  .profile-table td:first-child {
+    padding-bottom: 2px;
+  }
+  
+  .profile-table tr {
+    display: block;
+    padding: 10px ;
+  }
 }
 
+.btn-ig {
+  background-color: #1c1c1c;
+  color: #ffffff !important;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
 
+.btn-ig:hover {
+  background-color: #e1306c; 
+  border-color: #e1306c;
+}
